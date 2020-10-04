@@ -1,0 +1,1 @@
+Make sure to run the npx nodemon calculator-server.js file in the terminal command to activate ar local server in the Java script file
