@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Form</title>
+    <!-- SOMETHING IS MISSING HERE -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+</head>
+
+<body>
+
+    <h2>FORM using HTTP GET</h2>
+    <form action="http://127.0.0.1:8080" method="GET">
+        
+        <fieldset>
+            <!-- YOUR HTML FORM CODE ENDS HERE -->
+            
+            <legend>Calculator: Add 2 Numbers</legend>
+            
+                <label for="get1">
+                    Enter the first number:
+                </label>
+                <p>
+                <input type='number'  id="get1"  placeholder="Numerics Only!" name="number_a"
+                min="1"></p>
+                <label for="get1.0">
+                    Enter the second number:
+                </label>
+                <p>
+                    <input  
+                    type="number" " id="get1.0" placeholder="Numerics Only!"
+                    min="1" 
+                    required
+                    name="number_b">
+                </p>
+
+            <p><input type='checkbox' name="Agree"   required>
+              &#128077; I agree with the terms of the software agreement.</p>
+                <button type="submit">Calculate</button>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <h2>FORM using HTTP POST</h2>
+    <form action="http://127.0.0.1:8080" method="POST">
+        <fieldset>
+            <legend>Calculator: Add 2 Numbers</legend>
+            <!-- YOUR HTML FORM CODE GOES HERE -->
+            
+                <label for="get1">
+                    Enter the first number:
+                </label>
+                <p>
+                <input type='number'  id="get1"  placeholder="Numerics Only!" name="number_a"
+                min="1"></p>
+                <label for="get1.0">
+                    Enter the second number:
+                </label>
+                <p>
+                    <input  
+                    type="number" " id="get1.0" placeholder="Numerics Only!"
+                    min="1" 
+                    required
+                    name="number_b">
+                </p>
+
+            <p><input type='checkbox' name="Agree"   required>
+              &#128077; I agree with the terms of the software agreement.</p>
+                <button type="submit">Calculate</button>
+        </fieldset>
+    </form>
+    <script src="calculator-server.js"></script>
+
+</body>
+
+</html>
