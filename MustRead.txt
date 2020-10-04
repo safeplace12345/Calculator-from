@@ -1,1 +1,3 @@
 Make sure to run the npx nodemon calculator-server.js file in the terminal command to activate ar local server in the Java script file
+link the action of the form to the server address or a host address ie http.www.face...... or http:// 12.36.78.00 as an i.p 
+goodluck
